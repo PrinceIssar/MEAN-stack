@@ -7,6 +7,7 @@ import { FriendsComponent } from './friends/friends.component';
 import { FriendCreateComponent } from './friend-create/friend-create.component';
 import { FriendEditComponent } from './friend-edit/friend-edit.component';
 import {RouterModule} from "@angular/router";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 
@@ -19,9 +20,11 @@ import {RouterModule} from "@angular/router";
     FriendCreateComponent,
     FriendEditComponent
   ],
-  imports: [
-    CommonModule,
-    RouterModule
-  ]
+    imports: [
+        CommonModule,
+        RouterModule,
+        FormsModule,
+      ReactiveFormsModule
+    ]
 })
 export class AdminModule { }

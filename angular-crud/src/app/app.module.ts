@@ -5,6 +5,7 @@ import {MainModule} from "./main/main.module";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {HttpClientModule} from "@angular/common/http";
 
 
 
@@ -17,7 +18,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     AdminModule,
-    MainModule
+    MainModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

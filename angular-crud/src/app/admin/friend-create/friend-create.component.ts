@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {FriendService} from "../../services/friend.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-friend-create',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FriendCreateComponent implements OnInit {
 
-  constructor() { }
+  name = '';
+  image = '';
+  constructor(
+    private friendService: FriendService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
+submit(): void{
+  const data = {
+    name: this.name,
+    image: this.image
+  }
 
+  this.friendService.create(data).subscribe(
+    ()=>{
+      this.router.navigate(['/admin/friends'])
+    }
+  )
+}
 }

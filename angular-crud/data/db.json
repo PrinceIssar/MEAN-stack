@@ -3,19 +3,22 @@
     {
       "id": 1,
       "name": "Prince",
-      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hosco.com%2Fen%2Fmember%2Fprince-issar&psig=AOvVaw1Q6DY69jjulw1OECQzr280&ust=1628598405610000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiftf33o_ICFQAAAAAdAAAAABAD"
+      "image": "https://www.hosco.com/image/logo/348933-4881/200/200"
     },
     {
       "id": 2,
       "name": "Jo",
-      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hosco.com%2Fen%2Fmember%2Fprince-issar&psig=AOvVaw1Q6DY69jjulw1OECQzr280&ust=1628598405610000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiftf33o_ICFQAAAAAdAAAAABAD"
+      "image": "https://www.hosco.com/image/logo/348933-4881/200/200"
     },
     {
-
+      "id": 3,
       "name": "Beu",
-      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hosco.com%2Fen%2Fmember%2Fprince-issar&psig=AOvVaw1Q6DY69jjulw1OECQzr280&ust=1628598405610000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiftf33o_ICFQAAAAAdAAAAABAD",
-      "id": 3
+      "image": "https://www.hosco.com/image/logo/348933-4881/200/200"
+    },
+    {
+      "name": "https://www.hosco.com/image/logo/348933-4881/200/200",
+      "image": "test",
+      "id": 4
     }
   ]
 }
-

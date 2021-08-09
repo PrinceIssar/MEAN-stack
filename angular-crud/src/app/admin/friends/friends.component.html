@@ -1,4 +1,4 @@
-<a href="" class="btn">Add Friend</a>
+<a routerLink="/admin/friends/create" class="btn">Add Friend</a>
 <table>
   <thead>
   <tr>
@@ -9,12 +9,12 @@
   </tr>
   </thead>
   <tbody>
-  <tr>
-    <td>hsh</td>
-    <td>hsh</td>
-    <td>hsh</td>
+  <tr *ngFor="let friend of friends">
+    <td>{{friend.id}}</td>
+    <td>{{friend.name}}</td>
+    <td><img [src]="friend.image" width="90"  alt="image"/> </td>
     <td>
-      <a href="" class="btn">Edit</a>
+      <a [routerLink]="['/admin/friends/', friend.id, 'edit']" class="btn">Edit</a>
       <button class="btn btn-del">Delete</button>
     </td>
   </tr>
