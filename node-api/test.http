@@ -1,0 +1,33 @@
+### GET ALL Friends
+
+GET http://localhost:4000/api/friends HTTP/1.1
+
+### GET Single Friend
+GET  http://localhost:4000/api/friends/610ceb8ea905b94df85a936e HTTP/1.1
+
+### ADD Friend
+
+POST http://localhost:4000/api/friends HTTP/1.1
+Content-Type: application/json
+
+{
+"name": "abc",
+"phone": "123",
+"image": "https://cdn.britannica.com/60/8160-050-08CCEABC/German-shepherd.jpg",
+"details": "I love Dogs"
+}
+
+### update Friend
+
+PUT http://localhost:4000/api/friends/610ceb8ea905b94df85a936e HTTP/1.1
+Content-Type: application/json
+
+{
+
+"name": "updated abc "
+
+}
+
+### delete Firend
+
+DELETE http://localhost:4000/api/friends/610ceb8ea905b94df85a936e HTTP/1.1
