@@ -1,9 +1,9 @@
 {
   "friends": [
     {
-      "id": 1,
       "name": "Prince",
-      "image": "https://www.hosco.com/image/logo/348933-4881/200/200"
+      "image": "https://www.hosco.com/image/logo/348933-4881/200/200",
+      "id": 1
     },
     {
       "id": 2,
@@ -14,11 +14,6 @@
       "id": 3,
       "name": "Beu",
       "image": "https://www.hosco.com/image/logo/348933-4881/200/200"
-    },
-    {
-      "name": "https://www.hosco.com/image/logo/348933-4881/200/200",
-      "image": "test",
-      "id": 4
     }
   ]
 }

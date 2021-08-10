@@ -30,4 +30,9 @@ export class FriendService {
   update(id: number, data:any): Observable<Friend>{
     return this.http.put<Friend>(`${this.apiUrl}/${id}`, data)
   }
+  //Delete method
+  delete(id: number): Observable<void>{
+    return this.http.delete<void>(`${this.apiUrl}/${id}`)
+  }
+
 }

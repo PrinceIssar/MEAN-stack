@@ -17,7 +17,14 @@ export class FriendsComponent implements OnInit {
         this.friends = friends
       }
     )
+  }
 
+ friendDel(id: number): void{
+    this.friendService.delete(id).subscribe(
+      ()=>{
+        this.friends = this.friends.filter( f => f.id !== id);
+      }
+    )
   }
 
 }
