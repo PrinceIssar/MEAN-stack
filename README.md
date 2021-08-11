@@ -1,3 +1,6 @@
+<img width="1252" alt="Screenshot 2021-08-11 at 11 47 42" src="https://user-images.githubusercontent.com/82021741/129008359-6545e354-dd4f-4bfb-bb34-fe93fea43653.png">
+
+
 # AngularCrud
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
