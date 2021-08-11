@@ -1,0 +1,26 @@
+<a routerLink="/admin/friends/create" class="btn">Add Friend</a>
+<table>
+  <thead>
+  <tr>
+    <th>#id</th>
+    <th>Name</th><!--    /title-->
+    <th>phone</th>
+    <th>details</th>
+    <th>Image</th>
+    <th>Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let friend of friends">
+    <td>{{friend._id}}</td>
+    <td>{{friend.name}}</td>
+    <td>{{friend.phone}}</td>
+    <td>{{friend.details}}</td>
+    <td><img [src]="friend.image" width="90"  alt="image"/> </td>
+    <td>
+      <a [routerLink]="['/admin/friends/', friend._id, 'edit']" class="btn">Edit</a>
+      <button class="btn btn-del" (click)="friendDel(friend._id)">Delete</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
