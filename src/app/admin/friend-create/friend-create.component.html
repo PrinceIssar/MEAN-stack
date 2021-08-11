@@ -1,8 +1,10 @@
 <form (submit)="submit()">
   <label>Name</label>
-
   <input type="text" name="name" [(ngModel)]="name">
-
+  <label>Phone</label>
+  <input type="text" name="phone" [(ngModel)]="phone">
+  <label>Details</label>
+  <input type="text" name="details" [(ngModel)]="details">
   <label>Image</label>
   <input type="text" name="image" [(ngModel)]="image">
   <button type="submit">Add Friend</button>

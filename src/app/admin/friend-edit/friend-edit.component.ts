@@ -20,8 +20,11 @@ export class FriendEditComponent implements OnInit {
     private router: Router
   ) {
     // not to have error define here not in ngOnInit
+    // this is a reactive and normal form : Important
     this.form = this.formBuilder.group({
       name: '',
+      phone: '',
+      details: '',
       image:''
     })
 

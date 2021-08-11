@@ -10,7 +10,10 @@ import {Router} from "@angular/router";
 export class FriendCreateComponent implements OnInit {
 
   name = '';
+  phone = '';
+  details = '';
   image = '';
+
   constructor(
     private friendService: FriendService,
     private router: Router
@@ -21,6 +24,8 @@ export class FriendCreateComponent implements OnInit {
 submit(): void{
   const data = {
     name: this.name,
+    phone: this.phone,
+    details: this.details,
     image: this.image
   }
 
